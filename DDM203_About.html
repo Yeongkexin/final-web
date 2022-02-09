@@ -1,0 +1,149 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<link href="Style/one_page_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+	<header>
+			<a href="home test.html"><img src="Image/logo-13.png" width="65" height="49" alt="logo"/></a>
+			<div class="toggle" onClick="toggleMenu();"></div>
+		
+		 	<ul class="navigation">
+		 	  <li><a href="#about" onClick="toggleMenu();">About</a></li>
+				
+		 	  <li class="subMenu">
+				  <a href="#project" onClick="toggleMenu();">Project</a>
+				 <ul >
+				  	<li><a href="DDM203_Photography.html">Photography</a></li>
+					<li><a href="DDM203_Miniature.html">Miniature</a></li>
+				 </ul>
+			  </li>
+				<img class="down" src="Image/next.png" alt="down"/>
+		 	  <li><a href="#contact" onClick="toggleMenu();">Contact</a></li>
+          </ul>
+		
+	</header>
+		
+	<div id="about">
+		<div id="aboutimg">
+			<img src="Image/about_img-14.png" width="450" height="568" alt="aboutimg"/>
+		</div><!-- end of aboutimg-->
+		
+		<div id="about_info">
+			<h1>Eddie Putera Noordin</h1>
+			<p>I am Eddie Putera Noordinis a <b><i>Photographer</i></b> and<b><i>Visual artist</i></b>. I was born in Kedah but raised and educated in Kuala Lumpur. I regard myself as a sketch artist, photographer and drummer. I had never pursued a formal education in the arts but rather, I see myself as an avid arts hobbyist. To put it simply, I think it runs in my blood.</p>
+		</div><!-- end of about_info-->
+		</div><!-- end of about-->
+		
+		<div id="said">
+			<div id="g_span">
+				
+			<div class="com1">“</div>
+				
+			<div class="com2">”</div>
+				
+			</div>	
+			<p>Humans need art as food for the soul. As a photographer and visual artist, I am the chef who is dedicated to provide the best food I can muster in the world.</p>
+		</div><!-- end of  said-->
+	
+		
+	<div id="project">
+		<h2>Portfolio</h2>
+		<div class="portfolio">	
+		<div class="portfolio1">
+			
+			<div id="port_img1">
+				<img src="Image/photography-15.png" width="600" height="398" alt="photography"/>
+			</div><!-- end of port_img-->
+			
+			<div class="port_info">
+				<h3>Photography</h3>
+				<p>Street photography has become<br> a therapeutic indulgence, I enjoy<br> going out to meet people.</p>
+				<a href="DDM203_Photography.html">Learn more</a>
+			</div><!-- end of port_info-->
+			
+				
+			
+		</div><!-- end of portfolio1-->
+			
+		<div class="portfolio2">
+			
+			<div class="port_info">	
+				<h3>Miniature</h3>
+				<p>The works show the historical traces <br>on the walls of the buildings, the dirt <br>on the ground, the garbage in the <br>trenches, etc.</p>
+				
+				<a href="DDM203_Miniature.html">Learn more</a>
+			</div><!-- end of port_info-->
+			<div id="port_img2">
+				<img src="Image/miniature-16.png" width="600" height="396" alt="miniature"/>
+			</div><!-- end of port_img-->
+			
+		</div><!-- end of portfolio2-->
+		</div><!-- end of portfolio-->
+	</div><!-- end of project-->
+		
+	<div id="contact">
+		<h1>Contact</h1>
+		<div id="contactForm">
+			<div class="inputbox">
+				<input type="text" placeholder="Name">
+			</div><!-- end of inputbox-->
+			
+			<div class="inputbox">
+				<input type="text" placeholder="Email">
+			</div><!-- end of inputbox-->
+			
+			<div class="inputbox">
+				<textarea type="text" placeholder="Massage"></textarea>
+			</div><!-- end of inputbox-->
+			
+			<div class="inputbox">
+				<input type="submit" value="Send Message">
+			</div><!-- end of inputbox-->
+		</div><!-- end of contactForm-->
+		
+	</div><!-- end of contact-->
+		
+		
+	<footer>
+		<div id="social">
+		<a href="https://www.facebook.com/eddieputeranoordin" target="_blank"><img src="Image/facebook-49.png" width="40" height="40" alt="facebook"/></a>
+		
+		<a href="https://www.instagram.com/eddieputera/?hl=en" target="_blank"><img src="Image/instagram (3).png" width="40" height="40" alt="instagram"/></a>
+		
+		<a href="https://www.youtube.com/channel/UCT3sFBRdBzxhFcENZY3Flkg" target="_blank"><img src="Image/youtube (2).png" width="40" height="40" alt="youtube"/></a>
+		</div>
+		
+		<div id="copyright">
+		<p>Copyright &copy; Eddie Putera.All Right Reserved</p>
+		</div>
+	</footer>
+	</div><!-- end of container-->
+	
+	<script type ="text/javascript">
+	
+	window.addEventListener('scroll', function(){
+	const header = document.querySelector('header');
+	header.classList.toggle("sticky",window.scrollY > 0);
+	});
+
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			menuToggle.classList.toggle('active');
+			var navigation = document.querySelector('.navigation');
+			navigation.classList.toggle('active');
+			
+			$('ul li').click(function(){
+				$(this).siblings().removeClass('active');
+				$(this).toggleClass('active');
+			})
+		}
+		
+	</script>
+</body>
+</html>

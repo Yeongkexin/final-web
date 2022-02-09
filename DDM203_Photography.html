@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Photography</title>
+<link href="Style/one_page_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+	<header>
+		<a href="home test.html"><img src="Image/logo-13.png" width="65" height="49" alt="logo"/></a>
+			<div class="toggle" onClick="toggleMenu();"></div>
+		 	<ul class="navigation">
+		 	  <li><a href="DDM203_About.html" onClick="toggleMenu();">About</a></li>
+		 	  <li class="subMenu"><a href="#project" onClick="toggleMenu();">Project</a>
+			  	<ul>
+				  	<li><a href="DDM203_Photography.html">Photography</a></li>
+					<li><a href="DDM203_Miniature.html">Miniature</a></li>
+				 </ul>
+			  </li>
+				<img class="down" src="Image/next.png" alt="down"/>
+		 	  <li><a href="#contact" onClick="toggleMenu();">Contact</a></li>
+          </ul>
+		
+	</header>
+		<div  id="photographyImg" class ="bannerImg"></div>
+		
+		<div id="photography">
+		<div class="content">
+			
+			<h1>Photography</h1>
+			<p>The constants in photography are the amount of light needed to capture and compose a story in a shot, and by mastering these two constants,the variable subject will not matter anymore.</p>
+		</div><!-- end of content-->
+		</div>
+		
+	  <div class="Gallery2">
+		<h2>Gallery</h2>
+	    <div id="prow_1">
+			<div id="women"> 
+		  	<a href="Image/gallery-33.png" target="_blank"><img id="women_s" class="small_img" src="Image/gallery-33.png" width="405" height="541" alt="galley 1"/></a>
+		  </div>
+			  
+			<div id="center">
+		  <a href="Image/gallery-34.png" target="_blank"><img class="small_img" src="Image/gallery-34.png" width="400" height="265" alt="galley 2"/></a>
+		  
+		  <a href="Image/gallery-36.png" target="_blank"><img class="small_img" src="Image/gallery-36.png" width="400" height="265" alt="galley 4"/></a>
+			</div>
+			
+			<div id="right">
+			  <a href="Image/gallery-35.png" target="_blank"><img class="small_img" src="Image/gallery-35.png" width="400" height="265" alt="galley 3"/></a>
+		  <a href="Image/gallery-37.png" target="_blank"><img class="small_img" src="Image/gallery-37.png" width="400" height="265" alt="galley 5"/></a>
+			</div>
+		  </div>
+		  
+	    <div id="prow_2">
+			  	<div id="river">
+		  		<a href="Image/gallery-38.png" target="_blank"><img id="river_s" class="big_img" src="Image/gallery-38.png" width="810" height="544" alt="galley 6"/></a>
+				</div>
+			  	<div id="right2">
+		  		<a href="Image/gallery-39.png" target="_blank"><img class="small_img" src="Image/gallery-39.png" width="400" height="265" alt="galley 7"/></a>
+		  		<a href="Image/gallery-40.png" target="_blank"><img class="small_img" src="Image/gallery-40.png" width="400" height="265" alt="galley 8"/></a>
+					
+				</div>
+		</div>
+		  
+		  <div id="prow_3">
+		  <a href="Image/gallery-41.png" target="_blank"><img class="s_img" src="Image/gallery-41.png" width="400" height="270" alt="galley 9"/></a>
+		  <a href="Image/gallery-42.png" target="_blank"><img class="s_img" src="Image/gallery-42.png" width="400" height="272" alt="galley 10"/></a>
+		  <a href="Image/gallery-43.png" target="_blank"><img class="s_img" src="Image/gallery-43.png" width="400" height="268" alt="galley 11"/></a>
+			</div>
+		 
+		</div><!-- end of Gallery-->
+		
+		<footer>
+		<div id="social">
+		<a href="https://www.facebook.com/eddieputeranoordin" target="_blank"><img src="Image/facebook-49.png" width="40" height="40" alt="facebook"/></a>
+		
+		<a href="https://www.instagram.com/eddieputera/?hl=en" target="_blank"><img src="Image/instagram (3).png" width="40" height="40" alt="instagram"/></a>
+		
+		<a href="https://www.youtube.com/channel/UCT3sFBRdBzxhFcENZY3Flkg" target="_blank"><img src="Image/youtube (2).png" width="40" height="40" alt="youtube"/></a>
+		</div>
+		
+		<div id="copyright">
+		<p>Copyright &copy; Eddie Putera.All Right Reserved</p>
+		</div>
+	</footer>
+	</div><!-- end of container-->
+	
+	<script type ="text/javascript">
+	
+	window.addEventListener('scroll', function(){
+	const header = document.querySelector('header');
+	header.classList.toggle("sticky",window.scrollY > 0);
+	});
+
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			menuToggle.classList.toggle('active');
+			var navigation = document.querySelector('.navigation');
+			navigation.classList.toggle('active');
+			
+			$('ul li').click(function(){
+				$(this).siblings().removeClass('active');
+				$(this).toggleClass('active');
+			})
+		}
+		
+	</script>
+	
+</body>
+</html>
